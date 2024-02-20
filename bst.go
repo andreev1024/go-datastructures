@@ -5,6 +5,10 @@ package datastructures
 // TODO print
 // TODO make Root private
 
+// see
+// https://gist.github.com/N02870941/33d20ab51abf7f68474f3348a6147c70
+// https://flaviocopes.com/golang-data-structure-binary-search-tree/
+
 type BST struct {
 	Root *BSTNode
 }
