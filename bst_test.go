@@ -8,7 +8,7 @@ import (
 
 const TEST_FAILED = "Test failed"
 
-func TestInsert(t *testing.T) {
+func TestBSTInsert(t *testing.T) {
 
 	bst := ds.BST{}
 	bst.Insert(5)
@@ -38,7 +38,7 @@ func TestInsert(t *testing.T) {
 	}
 }
 
-func TestSearch(t *testing.T) {
+func TestBSTSearch(t *testing.T) {
 	bst := ds.BST{}
 	bst.Insert(5)
 	bst.Insert(4)
@@ -54,7 +54,7 @@ func TestSearch(t *testing.T) {
 	}
 }
 
-func TestFloor(t *testing.T) {
+func TestBSTFloor(t *testing.T) {
 	bst := ds.BST{}
 	bst.Insert(10)
 	bst.Insert(12)
@@ -75,7 +75,7 @@ func TestFloor(t *testing.T) {
 	}
 }
 
-func TestCeil(t *testing.T) {
+func TestBSTCeil(t *testing.T) {
 	bst := ds.BST{}
 	bst.Insert(10)
 	bst.Insert(12)
@@ -96,7 +96,7 @@ func TestCeil(t *testing.T) {
 	}
 }
 
-func TestDelete(t *testing.T) {
+func TestBSTDelete(t *testing.T) {
 	bst := ds.BST{}
 	bst.Insert(10)
 	bst.Delete(10)
