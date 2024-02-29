@@ -1,13 +1,15 @@
-package datastructures_test
+package quickunion_test
 
 import (
 	"testing"
 
-	ds "github.com/andreev1024/go-datastructures"
+	qu "github.com/andreev1024/go-datastructures/unionfind/quickunion"
 )
 
-func TestUnionFind(t *testing.T) {
-	uf := ds.CreateUnionFind(10)
+const TEST_FAILED = "Test failed"
+
+func TestQuickUnionFind(t *testing.T) {
+	uf := qu.CreateUnionFind(10)
 	// 1-2-5-6-7 3-8-9 4
 	uf.Union(1, 2)
 	uf.Union(2, 5)
